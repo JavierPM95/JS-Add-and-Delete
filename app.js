@@ -38,7 +38,7 @@ class UI {
         div.className = `alert alert-${cssClass} mt-2`;
         div.appendChild(document.createTextNode(message));
 
-        const container = document.querySelector('.container');
+        const container = document.querySelector('.print');
         const app = document.querySelector('#App');
         container.insertBefore(div, app);
         setTimeout(function() {
